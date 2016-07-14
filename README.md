@@ -1,8 +1,9 @@
 # Hacker::Gems [![Gem Version](https://badge.fury.io/rb/hacker-gems.svg)](https://badge.fury.io/rb/hacker-gems)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hacker/gems`. To experiment with that code, run `bin/console` for an interactive prompt.
+The is gem is just a collection of all gems that you may needed for your hacking life. 
 
-TODO: Delete this and the text above, and describe your gem
+## Why? 
+Each time I've a new system installation I keep trying to remember by libraries so I build this library to install all what I need.
 
 ## Installation
 
