@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'hacker/gems/version'
+require 'hacker-gems/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "hacker-gems"
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Gem installs most need gems for hackers — Edit.}
   spec.description   = %q{Hacker-gems installs most need gems for hackers — Edit.}
   spec.homepage      = "https://github.com/KINGSABRI/hacker-gems"
-  spec.license       = "GPL"
+  spec.licenses      = ['MIT']
   
   
   # 
@@ -20,96 +20,96 @@ Gem::Specification.new do |spec|
   # 
   
   # Pry - An IRB alternative and runtime developer console.
-  spec.add_dependency 'pry'
-  spec.add_dependency 'pry-doc'
-  spec.add_dependency 'pry-byebug'
+  spec.add_runtime_dependency 'pry'
+  spec.add_runtime_dependency 'pry-doc'
+  spec.add_runtime_dependency 'pry-byebug'
   # colorize - Extends String class or add a ColorizedString with methods to set text color, background.
   
   #
   # System gems 
   #
   
-  spec.add_dependency 'colorize'
+  spec.add_runtime_dependency 'colorize'
   # virustotal - A script for automating virustotal.com queries
-  spec.add_dependency 'virustotal'
+  spec.add_runtime_dependency 'virustotal'
   # uirusu - A tool and REST library for interacting with Virustotal.org
-  spec.add_dependency 'uirusu'
+  spec.add_runtime_dependency 'uirusu'
   # tty-prompt - A beautiful and powerful interactive command line prompt.
-  spec.add_dependency 'tty-prompt'
+  spec.add_runtime_dependency 'tty-prompt'
   
   #
   # Network gems
   #
   
   # net-ssh - A pure-Ruby implementation of the SSH2 client protocol.
-  spec.add_dependency 'net-ssh'
+  spec.add_runtime_dependency 'net-ssh'
   # net-scp - A pure Ruby implementation of the SCP client protocol
-  spec.add_dependency 'net-scp'
+  spec.add_runtime_dependency 'net-scp'
   # ruby-nmap - A Ruby interface to Nmap, the exploration tool and security / port scanner.
-  spec.add_dependency 'ruby-nmap'
+  spec.add_runtime_dependency 'ruby-nmap'
   # net-ping - A ping interface. Includes TCP, HTTP, LDAP, ICMP, UDP, WMI (for Windows).
-  spec.add_dependency 'net-ping'
+  spec.add_runtime_dependency 'net-ping'
   # ftpd - A pure Ruby FTP server library. It supports implicit and explicit TLS, IPV6, passive and active mode.
-  spec.add_dependency 'ftpd'
+  spec.add_runtime_dependency 'ftpd'
   # snmp - A Ruby implementation of SNMP (the Simple Network Management Protocol).
-  spec.add_dependency 'snmp'
+  spec.add_runtime_dependency 'snmp'
   # packetfu - A mid-level packet manipulation library for Ruby.
-  spec.add_dependency 'packetfu'
+  spec.add_runtime_dependency 'packetfu'
   # geoip - searches a GeoIP database host or IP address, returns the country, city, ISP and location.
-  spec.add_dependency 'geoip'
+  spec.add_runtime_dependency 'geoip'
   # ronin-scanners - A library for Ronin that provides Ruby interfaces to various third-party security scanners.
-  spec.add_dependency 'ronin-scanners'
+  spec.add_runtime_dependency 'ronin-scanners'
   # Highline - handle user input and output via a “Q&A” style API, including type conversions and validation.
-  spec.add_dependency 'highline'
+  spec.add_runtime_dependency 'highline'
   
   #
   # Web gems
   #
   
   # net-http-digest_auth - An implementation of RFC 2617 - Digest Access Authentication.
-  spec.add_dependency 'net-http-digest_auth'
+  spec.add_runtime_dependency 'net-http-digest_auth'
   # ruby-ntlm - NTLM implementation for Ruby
-  spec.add_dependency 'ruby-ntlm'
+  spec.add_runtime_dependency 'ruby-ntlm'
   # activerecord - Databases on Rails. Build a persistent domain model by mapping database tables to Ruby
-  spec.add_dependency 'activerecord'
+  spec.add_runtime_dependency 'activerecord'
   # tiny_tds - TinyTDS - A modern, simple and fast FreeTDS library for Ruby using DB-Library.
-  spec.add_dependency ''
+  spec.add_runtime_dependency 'tiny_tds'
   # activerecord-sqlserver-adapter
-  spec.add_dependency 'activerecord-sqlserver-adapter'
+  spec.add_runtime_dependency 'activerecord-sqlserver-adapter'
   # activerecord-oracle_enhanced-adapter
-  spec.add_dependency ''
+  spec.add_runtime_dependency ''
   # buby - a mashup of JRuby with the popular commercial web security testing tool Burp Suite from PortSwigger.
-  spec.add_dependency 'buby'
+  spec.add_runtime_dependency 'buby'
   # wasabi - A simple WSDL parser.
-  spec.add_dependency 'wasabi'
+  spec.add_runtime_dependency 'wasabi'
   # savon - Heavy metal SOAP client.
-  spec.add_dependency 'savon'
+  spec.add_runtime_dependency 'savon'
   # httpi - Common interface for Ruby's HTTP libraries.
-  spec.add_dependency 'httpi'
+  spec.add_runtime_dependency 'httpi'
   # httpclient - gives something like the functionality of libwww-perl (LWP) in Ruby
-  spec.add_dependency 'httpclient'
+  spec.add_runtime_dependency 'httpclient'
   # nokogiri - An HTML, XML, SAX, and Reader parser.
-  spec.add_dependency 'nokogiri'
+  spec.add_runtime_dependency 'nokogiri'
   # twitter - A Ruby interface to the Twitter API.
-  spec.add_dependency 'twitter'
+  spec.add_runtime_dependency 'twitter'
   # selenium-webdriver - A tool for writing automated tests of websites. It aims to mimic the behaviour of a real user
-  spec.add_dependency 'selenium-webdriver'
+  spec.add_runtime_dependency 'selenium-webdriver'
   # watir-webdriver - WebDriver-backed Watir.
-  spec.add_dependency 'watir-webdriver'
+  spec.add_runtime_dependency 'watir-webdriver'
   # coffee-script - Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler.
-  spec.add_dependency 'coffee-script'
+  spec.add_runtime_dependency 'coffee-script'
   # opal - Ruby runtime and core library for JavaScript.
-  spec.add_dependency 'opal'
+  spec.add_runtime_dependency 'opal'
   # mechanize - a ruby library that makes automated web interaction easy.
-  spec.add_dependency 'mechanize'
+  spec.add_runtime_dependency 'mechanize'
   # HTTP.rb - Fast, Elegant HTTP client for ruby
-  spec.add_dependency 'http'
+  spec.add_runtime_dependency 'http'
   # RestClient - A class and executable for interacting with RESTful web services.
-  spec.add_dependency 'rest-client'
+  spec.add_runtime_dependency 'rest-client'
   # httparty - Makes http fun! Also, makes consuming restful web services dead easy.
-  spec.add_dependency 'httparty'
+  spec.add_runtime_dependency 'httparty'
   # websocket - Universal Ruby library to handle WebSocket protocol.
-  spec.add_dependency 'websocket'
+  spec.add_runtime_dependency 'websocket'
  
   
   #
@@ -117,7 +117,7 @@ Gem::Specification.new do |spec|
   #
   
   # metasm - A cross-architecture assembler, disassembler, linker, and debugger.
-  #spec.add_dependency 'metasm'
+  #spec.add_runtime_dependency 'metasm'
   
   
   #
@@ -125,7 +125,7 @@ Gem::Specification.new do |spec|
   #
   
   # 
-  #spec.add_dependency ''
+  #spec.add_runtime_dependency ''
   
   
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
