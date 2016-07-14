@@ -79,7 +79,7 @@ Gem::Specification.new do |spec|
   # activerecord-oracle_enhanced-adapter
   spec.add_dependency 'activerecord-oracle_enhanced-adapter'
   # buby - a mashup of JRuby with the popular commercial web security testing tool Burp Suite from PortSwigger.
-  spec.add_dependency 'buby'
+  # spec.add_dependency 'buby'
   # wasabi - A simple WSDL parser.
   spec.add_dependency 'wasabi'
   # savon - Heavy metal SOAP client.
