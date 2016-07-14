@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["KING SABRI | @KINGSABRI"]
   spec.email         = ["king.sabri@gmail.com"]
 
-  spec.summary       = %q{Gem installs most need gems for hackers — Edit.}
-  spec.description   = %q{Hacker-gems installs most need gems for hackers — Edit.}
+  spec.summary       = %q{Gem installs most needed gems for hackers.}
+  spec.description   = %q{Hacker-gems installs most needed gems for hackers — Edit.}
   spec.homepage      = "https://github.com/KINGSABRI/hacker-gems"
   spec.licenses      = ['MIT']
   
