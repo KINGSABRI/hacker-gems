@@ -117,7 +117,7 @@ Gem::Specification.new do |spec|
   #
   
   # metasm - A cross-architecture assembler, disassembler, linker, and debugger.
-  #spec.add_dependency 'metasm'
+  spec.add_dependency 'metasm'
   
   
   #
