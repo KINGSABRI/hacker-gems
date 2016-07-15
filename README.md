@@ -1,6 +1,6 @@
 # Hacker-gems [![Gem Version](https://badge.fury.io/rb/hacker-gems.svg)](https://badge.fury.io/rb/hacker-gems)
 
-The gem is just a collection of all gems that you may needed for your hacking life. 
+The gem is just a collection of all gems that you may need for your hacking life. 
 
 ## Why? 
 Each time I've a new system installation I keep trying to remember by libraries so I build this library to install all what I need.
