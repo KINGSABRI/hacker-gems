@@ -110,6 +110,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'httparty'
   # websocket - Universal Ruby library to handle WebSocket protocol.
   spec.add_dependency 'websocket'
+  # Ruby web spidering library that can spider a site, multiple domains, certain links or infinitely.
+  spec.add_dependency 'spidr'
  
   
   #
