@@ -23,12 +23,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'pry'
   spec.add_dependency 'pry-doc'
   spec.add_dependency 'pry-byebug'
-  # colorize - Extends String class or add a ColorizedString with methods to set text color, background.
   
   #
   # System gems 
   #
   
+  # colorize - Extends String class or add a ColorizedString with methods to set text color, background.
   spec.add_dependency 'colorize'
   # virustotal - A script for automating virustotal.com queries
   spec.add_dependency 'virustotal'
@@ -36,6 +36,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'uirusu'
   # tty-prompt - A beautiful and powerful interactive command line prompt.
   spec.add_dependency 'tty-prompt'
+  # clipboard - Lets you access the clipboard on Linux, MacOS, Windows and Cygwin.
+  spec.add_dependency 'clipboard'
+  # commander - The complete solution for Ruby command-line executables.
+  spec.add_dependency 'commander'
+  # Highline - handle user input and output via a “Q&A” style API, including type conversions and validation.
+  spec.add_dependency 'highline'
   
   #
   # Network gems
@@ -59,8 +65,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'geoip'
   # ronin-scanners - A library for Ronin that provides Ruby interfaces to various third-party security scanners.
   spec.add_dependency 'ronin-scanners'
-  # Highline - handle user input and output via a “Q&A” style API, including type conversions and validation.
-  spec.add_dependency 'highline'
   
   #
   # Web gems
@@ -70,8 +74,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'net-http-digest_auth'
   # ruby-ntlm - NTLM implementation for Ruby
   spec.add_dependency 'ruby-ntlm'
-  # activerecord - Databases on Rails. Build a persistent domain model by mapping database tables to Ruby
-  spec.add_dependency 'activerecord'
+  # Rails - the most known web framework in ruby
+  spec.add_dependency 'rails'
   # tiny_tds - TinyTDS - A modern, simple and fast FreeTDS library for Ruby using DB-Library.
   spec.add_dependency 'tiny_tds'
   # activerecord-sqlserver-adapter
@@ -112,7 +116,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'websocket'
   # Ruby web spidering library that can spider a site, multiple domains, certain links or infinitely.
   spec.add_dependency 'spidr'
- 
   
   #
   # Exploitation gems 
@@ -121,10 +124,15 @@ Gem::Specification.new do |spec|
   # metasm - A cross-architecture assembler, disassembler, linker, and debugger.
   spec.add_dependency 'metasm'
   
-  
   #
   # Forensic gems 
   #
+  spec.add_dependency 'rubyfu'
+  
+  #
+  # Rubyfu book - Offline version of rubyfu book
+  #
+  spec.add_dependency 'ruby_apk'
   
   # 
   #spec.add_dependency ''
@@ -133,5 +141,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
+  
+  message = "Thanks for installing 'hacker-gems' gem!\n" + 
+            "Please visit " + "\e[0m\e[1m(" + "\e[0m\e[1mhttps://rubyfu.net" + "\e[0m\e[1m)\e[0m" + " for more hacking code!"
+  spec.post_install_message = message
 end

@@ -7,7 +7,12 @@ Each time I've a new system installation I keep trying to remember by libraries 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install it yourself as:
+
+    $ gem install hacker-gems
+
+
+Or add this line to your application's Gemfile:
 
 ```ruby
 gem 'hacker-gems'
@@ -17,13 +22,22 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install hacker-gems
-
 ## Contributing
 
 Open a new issue and suggest a really needed gem for hackers.
+
+### Build the gem 
+
+Make sure you're in the gem directory
+```
+cd hacker-gems
+``` 
+
+Build the gem 
+```
+gem build hacker-gems.gemspec
+```
+
 
 ## License
 
