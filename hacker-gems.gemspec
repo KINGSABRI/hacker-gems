@@ -65,7 +65,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'geoip'
   # ronin-scanners - A library for Ronin that provides Ruby interfaces to various third-party security scanners.
   spec.add_dependency 'ronin-scanners'
-  
+  # RubyDNS - provides a simple Ruby DSL for DNS servers.
+  spec.add_dependency 'rubydns'
+
   #
   # Web gems
   #
@@ -127,12 +129,14 @@ Gem::Specification.new do |spec|
   #
   # Forensic gems 
   #
-  spec.add_dependency 'rubyfu'
+
+  # ruby_apk - analyzing android apk library for ruby
+  spec.add_dependency 'ruby_apk'
   
   #
   # Rubyfu book - Offline version of rubyfu book
   #
-  spec.add_dependency 'ruby_apk'
+  spec.add_dependency 'rubyfu'
   
   # 
   #spec.add_dependency ''
